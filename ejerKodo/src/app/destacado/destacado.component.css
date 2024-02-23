@@ -2,3 +2,13 @@ img{
     height: 200px;
     width: 200px;
 }
+.destacadoContainer{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 30px;
+    align-items: center;
+    
+}

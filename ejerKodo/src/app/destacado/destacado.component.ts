@@ -20,7 +20,7 @@ export class DestacadoComponent {
       this.opcionAleatoria = this.opciones[this.getRandomNumber(0, this.opciones.length - 1)];
       this.idAleatorio = this.getRandomNumber(1, 6);
       this.elementosService.retornarElemento(this.opcionAleatoria, this.idAleatorio).subscribe(result => this.elemento = result);
-      console.log(this.elemento);
+      
     })
   }
 

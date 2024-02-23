@@ -1,9 +1,9 @@
 <div class="contenedorGenerico">
 @for(elemento of elementos;track elemento.id){
-    <div class="contenedorElemento" >
+    <div class="contenedorElemento" (click)="getElemento(tipo,elemento.id)">
         <b>Titulo</b>: {{tipo != "juegos" ? elemento.titulo : elemento.nombre}}
         <br>
-        <a routerLink='/{{tipo}}/{{elemento.id}}'><img src="{{elemento.caratula}}"></a>
+        <img src="{{elemento.caratula}}">
         <br>
         <b>Descripcion</b> {{elemento.descripcion}}
         <br>

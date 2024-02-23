@@ -1,0 +1,59 @@
+<main class="main">
+ <!-- <h1>Empleado</h1>
+ <p>Nombre del empleado: {{nombre}}</p>
+ <p>Edad: {{edad}}</p>
+ @if (edad>=18){
+  <p>Es mayor de edad</p>
+ } @else{
+  <p>Es menor de edad</p>
+ }
+<h1>Lista de articulos</h1>
+<table>
+  track es necesario para poder recorrer el array, suelen ser un id o clave
+  @for(articulo of articulos; track articulo.codigo){
+    <tr>
+      <td>{{articulo.codigo}}</td>
+      <td>{{articulo.descripcion}}</td>
+      <td>{{articulo.precio}}</td>
+    </tr>
+  }
+</table>
+
+<h1>Numero aleatorio entre 1 y 3</h1>
+@switch(generarNumero()){
+  @case (1){
+    <p>uno</p>
+  }
+  @case (2){
+    <p>dos</p>
+  }
+  @case (3){
+    <p>tres</p>
+  }
+}
+<hr>
+ <p>Dentro de 5 años tendrá {{ edad+5 }}</p>
+ <p>Los ultimos tres sueldos son: {{sueldos[0]}}, {{sueldos[1]}}, {{sueldos[2]}}</p>
+ <p>Ha ganado en los ultimos 3 meses {{sueldos[0]+sueldos[1]+sueldos[2]}}</p>
+ <p>Ha ganado en los ultimos 3 meses {{ultimos3Sueldos()}}</p>
+ <p>{{esActivo()}}</p>
+ <p>Puede visitar el sitio ingresando <a href="{{sitio}}">aqui</a></p>
+-->
+
+
+<!-- <p>{{contador}}</p>
+<button (click)="incrementar()">sumar 1</button>
+<button (click)="decrementar()">restar 1</button> -->
+
+
+<div>
+  <input type="button" (click)="fijarNombre1()" value="Juan">
+  <input type="button" (click)="fijarNombre2()" value="Ana">
+</div>
+value recoge el valor de nombre del atributo de la clase
+<br>
+<input type="text" [value]="nombre">
+
+</main>
+
+<router-outlet />

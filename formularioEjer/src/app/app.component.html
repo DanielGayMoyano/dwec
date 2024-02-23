@@ -1,0 +1,9 @@
+<main class="main">
+    <form [formGroup]="formulario" (ngSubmit)="submit()">
+        Ingresa email y contraseña:
+        <input type="number" formControlName="email">
+        @if(this.formulario.get('email')?.errors?.['emailFormat'])
+
+    </form>
+</main>
+<router-outlet />

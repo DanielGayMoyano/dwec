@@ -1,6 +1,7 @@
 import { Component, QueryList } from '@angular/core';
 import { ElementoService } from '../elemento.service';
 import { ActivatedRoute, ParamMap } from '@angular/router';
+import { RouterLink,RouterOutlet } from '@angular/router';
 import { Elemento } from '../elemento';
 
 @Component({
@@ -20,7 +21,10 @@ export class ListElementosComponent {
 
     })
   }
-  
+  getElemento(tipo: string,id:number): any {
+    console.log(tipo+"-"+id);
+    
+  }
 
 
 }

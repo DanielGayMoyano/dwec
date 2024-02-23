@@ -1,0 +1,14 @@
+.contenedorGenerico{
+    display: flex;
+    flex-direction: row;
+    margin: 3px;
+    column-gap: 20px;
+}
+.contenedorElemento{
+    border: 1px black solid;
+    padding: 10px;
+}
+img{
+    height: 100px;
+    width: 100px;
+}

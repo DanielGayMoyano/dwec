@@ -1,0 +1,13 @@
+<div class="contenedorGenerico">
+@for(elemento of elementos;track elemento.id){
+    <div class="contenedorElemento">
+        <b>Titulo</b>: {{tipo != "juegos" ? elemento.titulo : elemento.nombre}}
+        <br>
+        <img src="{{elemento.caratula}}">
+        <br>
+        <b>Descripcion</b> {{elemento.descripcion}}
+        <br>
+    </div>
+}
+
+</div>

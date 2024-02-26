@@ -1,13 +1,30 @@
-<div class="contenedorGenerico">
+<!-- <div class="contenedorGenerico">
 @for(elemento of elementos;track elemento.id){
-    <div class="contenedorElemento" (click)="getElemento(tipo,elemento.id)">
-        <b>Titulo</b>: {{tipo != "juegos" ? elemento.titulo : elemento.nombre}}
-        <br>
-        <img src="{{elemento.caratula}}">
-        <br>
-        <b>Descripcion</b> {{elemento.descripcion}}
-        <br>
+    <div class="contenedorElemento card" (click)="getElemento(tipo,elemento.id)">
+        Titulo: {{tipo != "juegos" ? elemento.titulo : elemento.nombre}}
+        
+        <img class="card-img-top"  src="{{elemento.caratula}}">
+        <div class="card-body">
+        <p class="card-text">Descripcion: {{elemento.descripcion}}</p>
+        </div>
     </div>
 }
 
+</div> -->
+<div class="contenedorGenerico">
+    @for(elemento of elementos;track elemento.id){
+    <mat-card class="example-card contenedorElemento" (click)="getElemento(tipo,elemento.id)">
+
+        <mat-card-header>
+            <mat-card-title-group>
+                <mat-card-title>{{tipo != "juegos" ? elemento.titulo : elemento.nombre}}</mat-card-title>
+                <mat-card-subtitle>{{tipo=="peliculas"?elemento.director:null}} {{tipo=="series"?elemento.genero:null}}</mat-card-subtitle>
+                <img mat-card-xl-image src="{{elemento.caratula}}">
+            </mat-card-title-group>
+        </mat-card-header>
+        <mat-card-content>
+     {{elemento.descripcion}}
+        </mat-card-content>
+    </mat-card>
+    }
 </div>

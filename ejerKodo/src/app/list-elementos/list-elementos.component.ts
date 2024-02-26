@@ -2,12 +2,14 @@ import { Component, QueryList } from '@angular/core';
 import { ElementoService } from '../elemento.service';
 import { ActivatedRoute, ParamMap } from '@angular/router';
 import { Router, RouterLink, RouterOutlet } from '@angular/router';
-import { Elemento } from '../elemento';
+import {MatCardModule} from '@angular/material/card';
+
+
 
 @Component({
   selector: 'app-list-elementos',
   standalone: true,
-  imports: [],
+  imports: [MatCardModule],
   templateUrl: './list-elementos.component.html',
   styleUrl: './list-elementos.component.css'
 })

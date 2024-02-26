@@ -1,6 +1,7 @@
-<p>{{elemento.id}}</p>
+<div class="elemento"><p>{{elemento.id}}</p>
 <h1>{{tipo=="juegos"?elemento.nombre:elemento.titulo}}</h1>
-<p>{{elemento.descripcion}}</p>
-<b>{{tipo=="peliculas"?elemento.director:null}} {{tipo=="series"?elemento.genero:null}}</b>
+<p class="blockquote">{{elemento.descripcion}}</p>
+<p class="blockquote-footer">{{tipo=="peliculas"?elemento.director:null}} {{tipo=="series"?elemento.genero:null}}</p>
 <br>
 <img src="{{elemento.caratula}}">
+</div>

@@ -1,8 +1,11 @@
-img{
-    width:80%;
+img {
+    width: 80%;
     border-radius: 20px;
 }
-.elemento{
+
+.elemento {
     margin-bottom: 5%;
     margin-top: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
